@@ -57,5 +57,18 @@ EXPOSE 80
 
 ![](./img/Pasted%20image%20(8).png)
 
+5. Run the container based on nginx image you just created. `docker run -p 8080:80 dockerfile` the -p flag indicates port mapping of host port 8080 to container port 80.
+
+![](./img/Pasted%20image%20(9).png)
+
+6. If you are using an EC2 instance, edit  security group settings(inbound rules) to allow traffic.
+
+7. Run `docker ps -a` to verify container.
+
+![](./img/Pasted%20image%20(16).png)
+
+8. On your browser type the system address mapped to port 8080. you should see the contents of the html file you created earlier.
+
+![](./img/Pasted%20image%20(10).png)
 
 
