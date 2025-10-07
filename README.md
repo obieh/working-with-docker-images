@@ -20,5 +20,28 @@
 
 ![](./img/Pasted%20image%20(2).png)
 
-### 
+### Dockerfile: A text file with instructions to build a custom image. Not shown in architecture diagrams but essential. 
+1. Use your text editor to create a file named 'Dockerfile'
+
+```Dockerfile
+# Use the official NGINX base image
+FROM nginx:latest
+
+# Set the working directory in the container
+WORKDIR  /usr/share/nginx/html/
+
+# Copy the local HTML file to the NGINX default public directory
+COPY index.html /usr/share/nginx/html/
+
+# Expose port 80 to allow external access
+EXPOSE 80
+
+# No need for CMD as NGINX image comes with a default CMD to start the server.
+```
+
+![](./img/Pasted%20image%20(4).png)
+
+2. Run this command to create html file, `echo '<h1> Welcome to darey.io</h1>' `
+
+![](./img/Pasted%20image%20(5).png)
 
