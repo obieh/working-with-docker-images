@@ -45,3 +45,17 @@ EXPOSE 80
 
 ![](./img/Pasted%20image%20(5).png)
 
+3. Build the docker image. Run `docker build -t dockerfile .`
+
+![](./img/Pasted%20image%20(6).png)
+
+### You should see that docker image has been built.
+
+![](./img/Pasted%20image%20(7).png)
+
+4. Run `docker images` to verify image build.
+
+![](./img/Pasted%20image%20(8).png)
+
+
+
