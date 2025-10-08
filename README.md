@@ -72,3 +72,28 @@ EXPOSE 80
 ![](./img/Pasted%20image%20(10).png)
 
 
+### Push Image to Docker Hub.
+#### You can push image to docker hub from your local docker just like you push to your git repo from your local git.
+
+1. Create an account on [docker hub](https://hub.docker.com/)
+
+2. Tag your image. This implies using your docker hub unsername and the repo name. Run `docker tag dockerfile obiehregistry/ my-nginx:1:0`
+
+![](./img/Pasted%20image%20(11).png)
+
+
+3. Login to Ducker. Run `docker login -u <your-docker-hub-username>`
+
+![](./img/Pasted%20image%20(13).png)
+
+4. Push the image to docker hub. Run `docker push <your-dockerhub-username>/<your-repository-name>:<tag>`
+
+![](./img/Pasted%20image%20(14).png)
+
+
+5. Verify image has been pushed to dockerhub. Go to your docker cloud account and click on 'Repositories'
+
+![](./img/Pasted%20image%20(15).png)
+ 
+
+### As you can see the nginx image is right there on docker hub.
